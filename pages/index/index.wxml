@@ -1,0 +1,21 @@
+<!--pages/index/index.wxml-->
+<view class='pageView bg_white'>
+
+    <view class='itemView' bindtap='clickSearch'>
+        <view class='item_left'>设置打印机</view>
+        <view class='item_right'>{{connSucced ? connDevice.name : "未连接"}}</view>
+    </view>
+
+    <button wx:if='{{connSucced}}' class='searchBtn' type='primary' bindtap='clickPrint'>打印标签</button>
+
+    <view class='dialog' wx:if='{{showDeviceDialog}}' catchlongtap='closeDeviceDialog'>
+        <view class='dialogView' catchtap='a'>
+            <view class='dialogView_title'>请选择打印机</view>
+            <scroll-view scroll-y class='dialogView_content'>
+                <view class='deviceItemView' wx:for='{{deviceArray}}' wx:key='index' bindtap='clickDevice' data-id='{{item.deviceId}}'>
+                    <view>{{item.name}}</view>
+                </view>
+            </scroll-view>
+        </view>
+    </view>
+</view>

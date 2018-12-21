@@ -1,0 +1,32 @@
+/* pages/index/index.wxss */
+
+.connStateView {
+	width: 100vw;
+	height: 110rpx;
+	line-height: 110rpx;
+	text-align: right;
+	box-sizing: border-box;
+	padding: 0 32rpx;
+	border-bottom: solid 1px #e5e5e5;
+}
+.dialogView_content {
+	height: 240rpx;
+}
+
+.itemView {
+	border-bottom: solid 1px #e5e5e5 !important;
+}
+
+.deviceItemView {
+	width: 100%;
+	height: 110rpx;
+	line-height: 110rpx;
+	text-align: left;
+}
+
+.searchBtn {
+	width: 90vw;
+	height: 94rpx;
+	margin-left: 5vw;
+	margin-top: 80rpx;
+}
