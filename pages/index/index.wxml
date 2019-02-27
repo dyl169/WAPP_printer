@@ -7,6 +7,7 @@
     </view>
 
     <button wx:if='{{connSucced}}' class='searchBtn' type='primary' bindtap='clickPrint'>打印标签</button>
+    <!-- <button wx:if='{{connSucced}}' class='searchBtn' type='primary' bindtap='backUpOne'>回退一张</button> -->
 
     <view class='dialog' wx:if='{{showDeviceDialog}}' catchlongtap='closeDeviceDialog'>
         <view class='dialogView' catchtap='a'>

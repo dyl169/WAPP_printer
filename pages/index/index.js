@@ -38,8 +38,8 @@ Page({
     /**
      * 生命周期函数--监听页面显示
      */
-    onShow: function() {
-        // base.Ble.write(base.PrintUtil.print('测试编码', '123456', '红色', 'www.baidu.com'));
+	onShow: function () {
+		base.PrintUtil.print('名称：我是名字test我是名字test我是名字test我是名字test', '编号：123456', '颜色：颜色red', '123456')
     },
 
     /**
@@ -113,8 +113,16 @@ Page({
         // for (var i = 0; i < 5; i++) {
         // 	base.Ble.write(base.PrintUtil.print('我是名字test' + i, '123456', '颜色red', '123456'));
         // }
-        base.Ble.write(base.PrintUtil.print('我是名字test', '123456', '颜色red', '123456'));
+		base.Ble.write(base.PrintUtil.print('名称：我是名字我是名字我是名字我是名字我是名字我是名字我是名字我是名字我是名字我是名字', '编号：123456', '颜色：颜色red', '123456'));
     },
+
+	/**
+	 * 回退一张
+	 */
+	backUpOne:function(){
+		base.Ble.write(base.PrintUtil.backUpOne());
+
+	},
 
     /********************蓝牙相关操作********************/
     //初始化所有监听
